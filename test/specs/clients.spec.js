@@ -22,22 +22,22 @@ describe('Clients Suit', ()=> {
 
         // далее в поля формы ввожу данные
         const surnameField = await $('input[formcontrolname="userSurname"]');
-        await surnameField.setValue('Putin');
+        await surnameField.setValue('Kamalov');
 
         const firstnameField = await $('input[formcontrolname="userName"]');
-        await firstnameField.setValue('Vladimir');
+        await firstnameField.setValue('dastan');
 
         const maleOptionRadio = await $('mat-radio-group mat-radio-button:nth-child(1) div[class="mat-radio-label-content"]');
         await maleOptionRadio.click();
 
         const emailField = await $('input[formcontrolname="email"]');
-        await emailField.setValue('Vladimir.Putin@gmail.com');
+        await emailField.setValue('dastankamalov@iaau.edu.kg');
 
         const phoneNumberField = await $('input[formcontrolname="phone"]');
-        await phoneNumberField.setValue('996555077077');
+        await phoneNumberField.setValue('+996 (708) 777-768');
 
         const datebirthField = await $('input[formcontrolname="birthday"]');
-        await datebirthField.setValue('03.03.1955');
+        await datebirthField.setValue('5.02.2023');
 
         const saveButton = await $('button[name="save"]');
         await saveButton.click();

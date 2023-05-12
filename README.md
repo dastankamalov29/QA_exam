@@ -1,4 +1,4 @@
-# QAmid
+# QA
 
 # Description
 There are Login, Create Client, View Client, Edit client test cases automated.
